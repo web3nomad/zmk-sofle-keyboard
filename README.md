@@ -18,5 +18,11 @@
 
 # Sofle键位图
 
-<img src="keymap-drawer/sofle.svg" >
+<img src="keymap-drawer/eyelash_sofle.svg" >
 
+https://nickcoutsos.github.io/keymap-editor/
+修改键位图请使用上面的链接，可以直接加载 github 项目
+
+修改完了以后要注意人工 fix 一下保存的 solfe.keymap，把里面的 `#include <dt-bindings/zmk/pointing.h>` 去掉，这个会导致编译错误
+
+提交以后触发 github action，结束后下载 left 和 right 两个文件，连接键盘到电脑，按两下侧边的按钮会出现 USB 设备，分别把 left 和 right 文件拖进去，设备会自动弹出，搞定
